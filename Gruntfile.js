@@ -11,15 +11,15 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: "/app/public/css",
-                    src: "*.less",
-                    dest: "/app/public/css",
+                    cwd: "public/css",
+                    src: "style.less",
+                    dest: "public/gen",
                     ext: ".css"
                 }]
             }
         },
         browserify: {
-            'public/js/js.min.js': ['public/js/js.js'],
+            'public/gen/js.js': ['public/js/js.js'],
             options: {
                 transform: [
                     'browserify-hogan'
@@ -42,8 +42,7 @@ module.exports = function(grunt) {
                     'public/js/**',
                     'public/views/**',
                     '!node_modules/**',
-                    '!public/img/**',
-                    '!public/js/js.min.js'
+                    '!public/gen/**'
                 ],
                 tasks: ['browserify'],
                 options: {
