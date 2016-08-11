@@ -27,9 +27,9 @@ module.exports = function(grunt) {
         watch: {
             style: {
                 files: [
-                    '/app/public/css/*.less'
+                    'public/css/*.less'
                 ],
-                tasks: ['less:compile', 'exec:target'],
+                tasks: ['less:compile'],
                 options: {
                     nospawn: false,
                     livereload: true
@@ -37,10 +37,10 @@ module.exports = function(grunt) {
             },
             app: {
                 files: [
-                    '/app/**',
-                    '!/app/node_modules/**',
-                    '!/app/public/img/**',
-                    '!/app/public/js/js.min.js'
+                    'public/js/**',
+                    '!node_modules/**',
+                    '!public/img/**',
+                    '!public/js/js.min.js'
                 ],
                 tasks: ['browserify'],
                 options: {
@@ -48,6 +48,16 @@ module.exports = function(grunt) {
                     livereload: true
                 }
             },
+            index: {
+                files: [
+                    'index.html'
+                ],
+                tasks: [],
+                options: {
+                    nospawn: false,
+                    livereload: true
+                }
+            }
         }
     });
 

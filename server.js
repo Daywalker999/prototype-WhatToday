@@ -23,4 +23,5 @@ app.get('/*', function(req, res) {
 
 app.listen(8000, function() {
     console.log('App listening on port 8000!');
+    console.log('visit http://localhost:8000/');
 });
