@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nohup nodejs server.js &> /tmp/server_nohup.out && grunt --verbose",
+    "dev": "nohup node server.js &> /tmp/server_nohup.out && grunt --verbose",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
