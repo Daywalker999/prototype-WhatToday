@@ -21,7 +21,9 @@ module.exports = function(grunt) {
         browserify: {
             'public/js/js.min.js': ['public/js/js.js'],
             options: {
-                transform: []
+                transform: [
+                    'browserify-hogan'
+                ]
             }
         },
         watch: {
@@ -38,6 +40,7 @@ module.exports = function(grunt) {
             app: {
                 files: [
                     'public/js/**',
+                    'public/views/**',
                     '!node_modules/**',
                     '!public/img/**',
                     '!public/js/js.min.js'
