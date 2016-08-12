@@ -12,14 +12,14 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: "public/css",
-                    src: "style.less",
+                    src: "main.less",
                     dest: "public/gen",
                     ext: ".css"
                 }]
             }
         },
         browserify: {
-            'public/gen/js.js': ['public/js/js.js'],
+            'public/gen/js.js': ['public/js/main.js'],
             options: {
                 transform: [
                     'browserify-hogan'

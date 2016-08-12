@@ -10202,30 +10202,65 @@ module.exports = (function() {
 
 },{}],4:[function(require,module,exports){
 (function($, MenuData) {
-
     "use strict";
+
+    var settings = {
+        defaultRoute: 'overview'
+    };
+    var self = {};
+
     var render = {};
 
+    window.app = {};
+    window.app.init = function() {
+        self.main = $('main');
+        $(document).ready(function() {
+            var hash = window.location.hash || settings.defaultRoute;
+            if(hash.charAt(0)=='#'){
+              hash = hash.substr(1);
+            }
+            window.goto(hash);
+        });
+    };
 
 
     /**
      * render the default product-overview
      */
     render.overview = function() {
-        var itemTemplate = require("../views/overview_item.mustache");
-
-        $(document).ready(function() {
-            var element = $("ul#overview");
-
-            element.html(''); //TODO should this be done here?
-
-            var html = itemTemplate.render({
-                items: MenuData.getData(),
-                five: new Array(5)
-            });
-            element.append(html);
-
+        var itemTemplate = require("../views/overview.mustache");
+        var html = itemTemplate.render({
+            items: MenuData.getData(),
+            five: new Array(5)
         });
+        self.main.append(html);
+    };
+
+    render.foodmatcher = function() {
+        var template = require("../views/foodmatcher.mustache");
+        var html = template.render({
+            items: MenuData.getData(),
+            five: new Array(5)
+        });
+        self.main.append(html);
+
+    };
+
+    /**
+     * render a new route
+     * @param  {string} path
+     */
+    window.goto = function(path) {
+        console.log('goto(' + path + ')');
+        if (!render[path]) {
+            console.error('path (' + path + ') not available');
+            alert('ERROR 3l2fh34fkh');
+        } else {
+          self.main.html('');
+            $('body').attr('route', path);
+            window.location.hash=path;
+            render[path]();
+        }
     };
 
     window.render = render;
@@ -10234,6 +10269,8 @@ module.exports = (function() {
     require('./MenuData.js')
 );
 
-},{"../views/overview_item.mustache":5,"./MenuData.js":3,"jquery":2}],5:[function(require,module,exports){
-var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");if(_.s(_.f("items",c,p,1),c,p,0,10,1296,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("    <li class=\"list-group-item\">");_.b("\n" + i);_.b("        <div class=\"media\">");_.b("\n" + i);_.b("            <div class=\"media-left\">");_.b("\n" + i);_.b("                <img class=\"media-object\" src=\"public/img/");_.b(_.v(_.f("image",c,p,0)));_.b("\" />");_.b("\n" + i);_.b("            </div>");_.b("\n" + i);_.b("            <div class=\"media-body\">");_.b("\n" + i);_.b("                <h4 class=\"media-heading\">");_.b(_.v(_.f("title",c,p,0)));_.b("</h4>");_.b("\n" + i);_.b("                <p>");_.b(_.v(_.f("description",c,p,0)));_.b("</p>");_.b("\n" + i);_.b("\n" + i);_.b("                <button type=\"button\" class=\"price btn btn-default\" aria-label=\"Left Align\">");_.b("\n" + i);_.b("                  ");_.b(_.v(_.f("price",c,p,0)));_.b("\n" + i);_.b("                  <span class=\"glyphicon glyphicon-euro\" aria-hidden=\"true\"></span>");_.b("\n" + i);_.b("                </button>");_.b("\n" + i);_.b("\n" + i);_.b("                <div class=\"ratingBox\">");_.b("\n" + i);_.b("                    <div class=\"rating\" style=\"width: ");_.b(_.v(_.f("rating",c,p,0)));_.b("px;\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,709,809,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                            <span class=\"glyphicon glyphicon-star\"></span>");_.b("\n");});c.pop();}_.b("                    </div>");_.b("\n" + i);_.b("\n" + i);_.b("\n" + i);_.b("                    <div class=\"bg\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,918,1024,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                            <span class=\"glyphicon glyphicon-star-empty\"></span>");_.b("\n");});c.pop();}_.b("                    </div>");_.b("\n" + i);_.b("                </div>");_.b("\n" + i);_.b("\n" + i);_.b("                <br/>");_.b("\n" + i);_.b("\n" + i);if(_.s(_.f("tags",c,p,1),c,p,0,1133,1242,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                    <button type=\"button\" class=\"tag btn btn-default btn-sm\">");_.b(_.v(_.d(".",c,p,0)));_.b("</button>");_.b("\n");});c.pop();}_.b("            </div>");_.b("\n" + i);_.b("        </div>");_.b("\n" + i);_.b("    </li>");_.b("\n");});c.pop();}return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
+},{"../views/foodmatcher.mustache":5,"../views/overview.mustache":6,"./MenuData.js":3,"jquery":2}],5:[function(require,module,exports){
+var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");_.b("FOOBAR ");_.b("\n");return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
+},{"hogan.js/lib/template":1}],6:[function(require,module,exports){
+var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");_.b("<ul class=\"list-group\">");_.b("\n" + i);if(_.s(_.f("items",c,p,1),c,p,0,34,1317,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("    <li class=\"list-group-item\">");_.b("\n" + i);_.b("        <div class=\"media\">");_.b("\n" + i);_.b("            <div class=\"media-left\">");_.b("\n" + i);_.b("                <img class=\"media-object\" src=\"public/img/");_.b(_.v(_.f("image",c,p,0)));_.b("\" />");_.b("\n" + i);_.b("            </div>");_.b("\n" + i);_.b("            <div class=\"media-body\">");_.b("\n" + i);_.b("                <h4 class=\"media-heading\">");_.b(_.v(_.f("title",c,p,0)));_.b("</h4>");_.b("\n" + i);_.b("                <p>");_.b(_.v(_.f("description",c,p,0)));_.b("</p>");_.b("\n" + i);_.b("\n" + i);_.b("                <button type=\"button\" class=\"price btn btn-default\" aria-label=\"Left Align\">");_.b("\n" + i);_.b("                  ");_.b(_.v(_.f("price",c,p,0)));_.b("\n" + i);_.b("                  <span class=\"glyphicon glyphicon-euro\" aria-hidden=\"true\"></span>");_.b("\n" + i);_.b("                </button>");_.b("\n" + i);_.b("\n" + i);_.b("                <div class=\"ratingBox\">");_.b("\n" + i);_.b("                    <div class=\"rating\" style=\"width: ");_.b(_.v(_.f("rating",c,p,0)));_.b("px;\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,733,833,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                            <span class=\"glyphicon glyphicon-star\"></span>");_.b("\n");});c.pop();}_.b("                    </div>");_.b("\n" + i);_.b("                    <div class=\"bg\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,940,1046,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                            <span class=\"glyphicon glyphicon-star-empty\"></span>");_.b("\n");});c.pop();}_.b("                    </div>");_.b("\n" + i);_.b("                </div>");_.b("\n" + i);_.b("                <br/>");_.b("\n" + i);_.b("\n" + i);if(_.s(_.f("tags",c,p,1),c,p,0,1154,1263,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                    <button type=\"button\" class=\"tag btn btn-default btn-sm\">");_.b(_.v(_.d(".",c,p,0)));_.b("</button>");_.b("\n");});c.pop();}_.b("            </div>");_.b("\n" + i);_.b("        </div>");_.b("\n" + i);_.b("    </li>");_.b("\n");});c.pop();}_.b("</ul>");_.b("\n");return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
 },{"hogan.js/lib/template":1}]},{},[4]);

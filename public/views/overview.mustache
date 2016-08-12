@@ -1,3 +1,4 @@
+<ul class="list-group">
 {{#items}}
     <li class="list-group-item">
         <div class="media">
@@ -19,15 +20,13 @@
                             <span class="glyphicon glyphicon-star"></span>
                         {{/five}}
                     </div>
-
-
                     <div class="bg">
                         {{#five}}
                             <span class="glyphicon glyphicon-star-empty"></span>
                         {{/five}}
                     </div>
                 </div>
-
+                <br/>
 
                 {{#tags}}
                     <button type="button" class="tag btn btn-default btn-sm">{{.}}</button>
@@ -36,3 +35,4 @@
         </div>
     </li>
 {{/items}}
+</ul>
