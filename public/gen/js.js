@@ -10073,7 +10073,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10085,7 +10085,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10099,7 +10099,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10113,7 +10113,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10127,7 +10127,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10141,7 +10141,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10155,7 +10155,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10167,7 +10167,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10179,7 +10179,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -10217,13 +10217,13 @@ module.exports = (function() {
         $(document).ready(function() {
             var element = $("ul#overview");
 
-            element.html('');//TODO should this be done here?
+            element.html(''); //TODO should this be done here?
 
-            //items
-            MenuData.getData().forEach(function(product) {
-                var html = itemTemplate.render(product);
-                element.append(html);
+            var html = itemTemplate.render({
+                items: MenuData.getData(),
+                five: new Array(5)
             });
+            element.append(html);
 
         });
     };
@@ -10235,5 +10235,5 @@ module.exports = (function() {
 );
 
 },{"../views/overview_item.mustache":5,"./MenuData.js":3,"jquery":2}],5:[function(require,module,exports){
-var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");_.b("<li class=\"list-group-item\">");_.b("\n" + i);_.b("<div class=\"media\">");_.b("\n" + i);_.b("    <div class=\"media-left\">");_.b("\n" + i);_.b("        <img class=\"media-object\" src=\"public/img/");_.b(_.v(_.f("image",c,p,0)));_.b("\" />");_.b("\n" + i);_.b("    </div>");_.b("\n" + i);_.b("    <div class=\"media-body\">");_.b("\n" + i);_.b("        <h4 class=\"media-heading\">");_.b(_.v(_.f("title",c,p,0)));_.b("</h4>");_.b("\n" + i);_.b("    </div>");_.b("\n" + i);_.b("</div>");_.b("\n" + i);_.b("</li>");_.b("\n");return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
+var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");if(_.s(_.f("items",c,p,1),c,p,0,10,1296,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("    <li class=\"list-group-item\">");_.b("\n" + i);_.b("        <div class=\"media\">");_.b("\n" + i);_.b("            <div class=\"media-left\">");_.b("\n" + i);_.b("                <img class=\"media-object\" src=\"public/img/");_.b(_.v(_.f("image",c,p,0)));_.b("\" />");_.b("\n" + i);_.b("            </div>");_.b("\n" + i);_.b("            <div class=\"media-body\">");_.b("\n" + i);_.b("                <h4 class=\"media-heading\">");_.b(_.v(_.f("title",c,p,0)));_.b("</h4>");_.b("\n" + i);_.b("                <p>");_.b(_.v(_.f("description",c,p,0)));_.b("</p>");_.b("\n" + i);_.b("\n" + i);_.b("                <button type=\"button\" class=\"price btn btn-default\" aria-label=\"Left Align\">");_.b("\n" + i);_.b("                  ");_.b(_.v(_.f("price",c,p,0)));_.b("\n" + i);_.b("                  <span class=\"glyphicon glyphicon-euro\" aria-hidden=\"true\"></span>");_.b("\n" + i);_.b("                </button>");_.b("\n" + i);_.b("\n" + i);_.b("                <div class=\"ratingBox\">");_.b("\n" + i);_.b("                    <div class=\"rating\" style=\"width: ");_.b(_.v(_.f("rating",c,p,0)));_.b("px;\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,709,809,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                            <span class=\"glyphicon glyphicon-star\"></span>");_.b("\n");});c.pop();}_.b("                    </div>");_.b("\n" + i);_.b("\n" + i);_.b("\n" + i);_.b("                    <div class=\"bg\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,918,1024,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                            <span class=\"glyphicon glyphicon-star-empty\"></span>");_.b("\n");});c.pop();}_.b("                    </div>");_.b("\n" + i);_.b("                </div>");_.b("\n" + i);_.b("\n" + i);_.b("                <br/>");_.b("\n" + i);_.b("\n" + i);if(_.s(_.f("tags",c,p,1),c,p,0,1133,1242,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                    <button type=\"button\" class=\"tag btn btn-default btn-sm\">");_.b(_.v(_.d(".",c,p,0)));_.b("</button>");_.b("\n");});c.pop();}_.b("            </div>");_.b("\n" + i);_.b("        </div>");_.b("\n" + i);_.b("    </li>");_.b("\n");});c.pop();}return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
 },{"hogan.js/lib/template":1}]},{},[4]);

@@ -13,7 +13,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -25,7 +25,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -39,7 +39,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -53,7 +53,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -67,7 +67,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -81,7 +81,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -95,7 +95,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -107,7 +107,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',
@@ -119,7 +119,7 @@ module.exports = (function() {
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
-            rating: 4.3,
+            rating: 43,
             tags: [
                 'thunfisch',
                 'salami',

@@ -14,13 +14,13 @@
         $(document).ready(function() {
             var element = $("ul#overview");
 
-            element.html('');//TODO should this be done here?
+            element.html(''); //TODO should this be done here?
 
-            //items
-            MenuData.getData().forEach(function(product) {
-                var html = itemTemplate.render(product);
-                element.append(html);
+            var html = itemTemplate.render({
+                items: MenuData.getData(),
+                five: new Array(5)
             });
+            element.append(html);
 
         });
     };

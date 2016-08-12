@@ -82,7 +82,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -140,12 +139,30 @@ body {
   line-height: 1.5;
   letter-spacing: 0.072em;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
+}
+.navbar .navbar-brand #brandImage {
+  height: 21px;
 }
 #overview .image {
   width: 5em;
   height: 5em;
   background-size: cover;
   background-color: black;
+}
+#overview .price {
+  font-weight: 400;
+  font-size: 120%;
+}
+#overview .ratingBox {
+  color: #ecbf5b;
+}
+#overview .ratingBox .rating {
+  position: absolute;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#overview .ratingBox .bg {
+  float: left;
+  white-space: nowrap;
 }

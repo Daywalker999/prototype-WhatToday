@@ -1,10 +1,38 @@
-<li class="list-group-item">
-    <div class="media">
-        <div class="media-left">
-            <img class="media-object" src="public/img/{{image}}" />
+{{#items}}
+    <li class="list-group-item">
+        <div class="media">
+            <div class="media-left">
+                <img class="media-object" src="public/img/{{image}}" />
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{title}}</h4>
+                <p>{{description}}</p>
+
+                <button type="button" class="price btn btn-default" aria-label="Left Align">
+                  {{price}}
+                  <span class="glyphicon glyphicon-euro" aria-hidden="true"></span>
+                </button>
+
+                <div class="ratingBox">
+                    <div class="rating" style="width: {{rating}}px;">
+                        {{#five}}
+                            <span class="glyphicon glyphicon-star"></span>
+                        {{/five}}
+                    </div>
+
+
+                    <div class="bg">
+                        {{#five}}
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        {{/five}}
+                    </div>
+                </div>
+
+
+                {{#tags}}
+                    <button type="button" class="tag btn btn-default btn-sm">{{.}}</button>
+                {{/tags}}
+            </div>
         </div>
-        <div class="media-body">
-            <h4 class="media-heading">{{title}}</h4>
-        </div>
-    </div>
-</li>
+    </li>
+{{/items}}
