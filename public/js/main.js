@@ -1,4 +1,4 @@
-(function($, MenuData) {
+(function($, MenuData, FoodMatcher) {
     "use strict";
 
     var settings = {
@@ -13,8 +13,8 @@
         self.main = $('main');
         $(document).ready(function() {
             var hash = window.location.hash || settings.defaultRoute;
-            if(hash.charAt(0)=='#'){
-              hash = hash.substr(1);
+            if (hash.charAt(0) == '#') {
+                hash = hash.substr(1);
             }
             window.goto(hash);
         });
@@ -35,12 +35,9 @@
 
     render.foodmatcher = function() {
         var template = require("../views/foodmatcher.mustache");
-        var html = template.render({
-            items: MenuData.getData(),
-            five: new Array(5)
-        });
-        self.main.append(html);
 
+        window.foodMatcher = new FoodMatcher();
+        window.foodMatcher.renderMatch();
     };
 
     /**
@@ -53,9 +50,9 @@
             console.error('path (' + path + ') not available');
             alert('ERROR 3l2fh34fkh');
         } else {
-          self.main.html('');
+            self.main.html('');
             $('body').attr('route', path);
-            window.location.hash=path;
+            window.location.hash = path;
             render[path]();
         }
     };
@@ -63,5 +60,6 @@
     window.render = render;
 })(
     require('jquery'),
-    require('./MenuData.js')
+    require('./MenuData.js'),
+    require('./Foodmatcher.js')
 );

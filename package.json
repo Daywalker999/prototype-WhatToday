@@ -27,6 +27,7 @@
     "grunt-shell": "^1.2.1",
     "hogan.js": "2.0.0",
     "jit-grunt": "^0.9.1",
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "lodash": "^4.15.0"
   }
 }

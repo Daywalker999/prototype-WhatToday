@@ -9,7 +9,7 @@ module.exports = (function() {
      * @private
      */
     var _data = [{
-            title: "Hamburger",
+            title: "Hamburger1",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -21,7 +21,7 @@ module.exports = (function() {
             ],
 
         }, {
-            title: "Hamburger",
+            title: "Hamburger2",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -35,7 +35,7 @@ module.exports = (function() {
         },
 
         {
-            title: "Hamburger",
+            title: "Hamburger3",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -49,7 +49,7 @@ module.exports = (function() {
         },
 
         {
-            title: "Hamburger",
+            title: "Hamburger4",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -63,7 +63,7 @@ module.exports = (function() {
         },
 
         {
-            title: "Hamburger",
+            title: "Hamburger5",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -77,7 +77,7 @@ module.exports = (function() {
         },
 
         {
-            title: "Hamburger",
+            title: "Hamburger6",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -91,7 +91,7 @@ module.exports = (function() {
         },
 
         {
-            title: "Hamburger",
+            title: "Hamburger7",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -103,7 +103,7 @@ module.exports = (function() {
             ],
 
         }, {
-            title: "Hamburger",
+            title: "Hamburger8",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
@@ -115,7 +115,7 @@ module.exports = (function() {
             ],
 
         }, {
-            title: "Hamburger",
+            title: "Hamburger9",
             description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
             image: 'pizza.jpg',
             price: 10.3,
