@@ -1,33 +1,35 @@
 {
-  "name": "prototype-whattoday",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nohup node server.js &> /tmp/server_nohup.out && grunt --verbose",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "bootstrap": "*",
-    "express": "^4.14.0",
-    "validator": "^5.5.0"
-  },
-  "license": "ISC",
-  "devDependencies": {
-    "browserify-hogan": "^0.3.0",
-    "grunt": "^0.4.5",
-    "grunt-browserify": "^4.0.1",
-    "grunt-contrib-htmlmin": "^0.6.0",
-    "grunt-contrib-less": "^1.1.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-exec": "^0.4.6",
-    "grunt-less-browserify": "0.0.2",
-    "grunt-line-remover": "0.0.2",
-    "grunt-shell": "^1.2.1",
-    "hogan.js": "2.0.0",
-    "jit-grunt": "^0.9.1",
-    "jquery": "^2.2.0",
-    "lodash": "^4.15.0"
-  }
+    "name": "prototype-whattoday",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "concurrently --kill-others \"node server.js\" \"grunt --verbose\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "body-parser": "^1.15.2",
+        "bootstrap": "*",
+        "express": "^4.14.0",
+        "validator": "^5.5.0"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "browserify-hogan": "^0.3.0",
+        "concurrently": "^2.2.0",
+        "grunt": "^0.4.5",
+        "grunt-cli": "^1.2.0",
+        "grunt-browserify": "^4.0.1",
+        "grunt-contrib-htmlmin": "^0.6.0",
+        "grunt-contrib-less": "^1.1.0",
+        "grunt-contrib-watch": "^0.6.1",
+        "grunt-exec": "^0.4.6",
+        "grunt-less-browserify": "0.0.2",
+        "grunt-line-remover": "0.0.2",
+        "grunt-shell": "^1.2.1",
+        "hogan.js": "2.0.0",
+        "jit-grunt": "^0.9.1",
+        "jquery": "^2.2.0",
+        "lodash": "^4.15.0"
+    }
 }
