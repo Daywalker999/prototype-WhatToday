@@ -3,6 +3,9 @@
         <div class="inner">
             <h3>{{title}}</h3>
             <div class="price">{{price}} &euro;</div>
+            {{#tags}}
+                <button type="button" class="tag btn btn-default btn-sm">{{.}}</button>
+            {{/tags}}
         </div>
     </div>
 {{/items}}

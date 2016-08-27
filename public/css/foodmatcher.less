@@ -1,4 +1,6 @@
 body[route=foodmatcher] {
+    @defaultMargin: 10px;
+
     nav {
         display: none;
     }
@@ -8,12 +10,31 @@ body[route=foodmatcher] {
         margin: 0;
         padding: 0;
         background-size: cover;
+        &:last-of-type {
+            .inner {
+                margin: auto;
+                position: absolute;
+                bottom: @defaultMargin;
+                left: @defaultMargin;
+            }
+        }
         .inner {
-          float: left;
-          margin: 20px;
-           background: rgba(54, 25, 25, .5);
+            float: left;
+            margin: @defaultMargin;
+            padding: 5px;
+            min-width: 50%;
+            background: rgba(14, 25, 25, .4);
+            border-radius: 3px;
+            -webkit-box-shadow: 0 0 13px 1px rgba(255,255,255,1);
+            -moz-box-shadow: 0 0 13px 1px rgba(255,255,255,1);
+            box-shadow: 0 0 13px 1px rgba(255,255,255,1);
+            color: white;
             h3 {
-              font-size: bold;
+                font-weight: bold;
+            }
+            button{
+              padding: 2px 5px;
+              text-transform: capitalize;
             }
         }
     }

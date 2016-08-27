@@ -166,6 +166,9 @@ body {
   float: left;
   white-space: nowrap;
 }
+.list-group-item button {
+  text-transform: capitalize;
+}
 body[route=foodmatcher] nav {
   display: none;
 }
@@ -176,11 +179,28 @@ body[route=foodmatcher] .matchPartner {
   padding: 0;
   background-size: cover;
 }
+body[route=foodmatcher] .matchPartner:last-of-type .inner {
+  margin: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
 body[route=foodmatcher] .matchPartner .inner {
   float: left;
-  margin: 20px;
-  background: rgba(54, 25, 25, 0.5);
+  margin: 10px;
+  padding: 5px;
+  min-width: 50%;
+  background: rgba(14, 25, 25, 0.4);
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 13px 1px #ffffff;
+  -moz-box-shadow: 0 0 13px 1px #ffffff;
+  box-shadow: 0 0 13px 1px #ffffff;
+  color: white;
 }
 body[route=foodmatcher] .matchPartner .inner h3 {
-  font-size: bold;
+  font-weight: bold;
+}
+body[route=foodmatcher] .matchPartner .inner button {
+  padding: 2px 5px;
+  text-transform: capitalize;
 }
