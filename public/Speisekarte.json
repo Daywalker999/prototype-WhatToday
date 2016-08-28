@@ -1,0 +1,215 @@
+{
+  "Knödel":{
+  "title": "Herzhafte Knödel",
+  "description": "Hausgemachte leckere Knödel",
+  "image": "knoedel.jpg",
+  "price": "3.50",
+  "rating": "4",
+  "tags": [
+    "Kartoffeln",
+    "Mehl",
+    "Butter",
+    "Eigelb",
+    "Salz",
+    "Muskat"
+  ]
+  },
+  "Spätzle":{
+  "title": "Herzhafte Spätzle",
+  "description": "Hausgemachte geschabte Spätzle",
+  "image": "spaetzle.jpg",
+  "price": "3.50",
+  "rating": "5",
+  "tags": [
+    "Mehl",
+    "Butter",
+    "Eigelb",
+    "Salz",
+    "Milch"
+  ]
+  },
+  "Schnitzel":{
+  "title": "Schnitzel",
+  "description": "Original Wiener Schnitzel",
+  "image": "schnitzel.jpg",
+  "price": "7",
+  "rating": "4",
+  "tags": [
+    "Kalb","Paniermehl", "Ei","Semmelbrösel"
+  ]
+  },
+  "Pommes":{
+  "title": "Pommes",
+  "description": "Pommes Frites aus der Friteuse",
+  "image": "pommes.jpg",
+  "price": "3.50",
+  "rating": "4",
+  "tags": [
+    "Kartoffel","Salz","Fett","Paprikapulver"
+  ]
+  },
+  "Kroketten":{
+  "title": "Kroketten",
+  "description": "Leckere Backofen Kroketten",
+  "image": "kroketten.jpg",
+  "price": "3.50",
+  "rating": "3",
+  "tags": [
+     "Kartoffel","Salz","Ei","Paniermehl"
+  ]
+  },
+  "Schweinebraten":{
+  "title": "Schweinebraten",
+  "description": "Schweinebraten nach altem Bayerischen Rezept",
+  "image": "schweinebraten.jpg",
+  "price": "10",
+  "rating": "5",
+  "tags": [
+    "Schweinefleisch","Öl", "Salz", "Pfeffer"
+  ]
+  },
+  "Haxen":{
+  "title": "Haxen",
+  "description": "Schweinehaxen nach altem Bayerischen Rezept",
+  "image": "haxen.jpg",
+  "price": "10",
+  "rating": "5",
+  "tags": [
+    "Schweinefleisch","Öl", "Salz", "Pfeffer"
+  ]
+  },
+  "Rinderbraten":{
+  "title": "Rinderbraten",
+  "description": "Herzhafter Rinderbraten",
+  "image": "rinderbraten.jpg",
+  "price": "10",
+  "rating": "4",
+  "tags": [
+    "Rindfleisch","Öl", "Salz", "Pfeffer"
+  ]
+  },
+  "Käsespätzle":{
+  "title": "Käsespätzle",
+  "description": "Die klassischen schwäbischen Käsespätzle",
+  "image": "kaesespaetzle.jpg",
+  "price": "7",
+  "rating": "5",
+  "tags": [
+    "Käse", "Mehl",
+    "Butter",
+    "Eigelb",
+    "Salz",
+    "Milch"
+  ]
+  },
+  "Reis":{
+  "title": "Reis",
+  "description": "Langkornreis als Beilage",
+  "image": "reis.jpg",
+  "price": "3.50",
+  "rating": "4",
+  "tags": [
+    "Reis", "Salz"
+  ]
+  },
+  "Sauerbraten":{
+  "title": "Sauerbraten",
+  "description": "Herzhafter Sauerbraten",
+  "image": "sauerbraten.jpg",
+  "price": "10",
+  "rating": "4",
+  "tags": [
+    "Rindfleisch", "Öl", "Salz", "Pfeffer","Rotwein"
+  ]
+  },
+  "Zwiebelrostbraten":{
+  "title": "Zwiebelrostbraten",
+  "description": "Langsam gebratener Bayerischer Zwieblrostbraten",
+  "image": "zwiebelrostbraten.jpg",
+  "price": "10",
+  "rating": "5",
+  "tags": [
+    "Schweinefleisch","Öl", "Salz", "Pfeffer", "Zwiebel"
+  ]
+  },
+  "Rouladen":{
+  "title": "Rouladen",
+  "description": "Herzhaft schmackhafte Rouladen",
+  "image": "rouladen.jpg",
+  "price": "10",
+  "rating": "5",
+  "tags": [
+    "Speck", "Rindfleisch", "Senf","Öl", "Salz", "Pfeffer","Essiggurke"
+  ]
+  },
+  "Bratwurst":{
+  "title": "Bratwurst",
+  "description": "Echte Thüringer Bratwürste",
+  "image": "bratwurst.jpg",
+  "price": "7",
+  "rating": "3",
+  "tags": [
+    "Schweinswurst"
+  ]
+  },
+  "Kratoffelsalat":{
+  "title": "Kratoffelsalat",
+  "description": "Kartoffelsalat mit Essig",
+  "image": "kartoffelsalat.jpg",
+  "price": "3.50",
+  "rating": "5",
+  "tags": [
+    "Kartoffel", "Essig", "Essiggurke","Zwiebel"
+  ]
+  },
+  "Leberkäse":{
+  "title": "Leberkäse",
+  "description": "Leckerer Leberkäse aus dem Ofen",
+  "image": "leberkaese.jpg",
+  "price": "7",
+  "rating": "4",
+  "tags": [
+    "Leberkäse", "Salz", "Pfeffer"
+  ]
+  },
+  "Schweinelende":{
+  "title": "Schweinelende",
+  "description": "Wundervoll herzhafte Schweinelende",
+  "image": "schweinelende.jpg",
+  "price": "10",
+  "rating": "4",
+  "tags": [
+    "Schweinefleisch","Öl", "Salz", "Pfeffer"
+  ]
+  },
+  "Burgunderbraten":{
+  "title": "Burgunderbraten",
+  "description": "Leckerer Burgunderbraten nach altem Hausrezept",
+  "image": "burgunderbraten.jpg",
+  "price": "10",
+  "rating": "3",
+  "tags": [
+    "Rindfleisch","Zwiebel","Salz","Pfeffer","Öl","Rotwein"
+  ]
+  },
+  "Brathähnchen":{
+  "title": "Brathähnchen",
+  "description": "Knuspriges Brathähnchen",
+  "image": "haendle.jpg",
+  "price": "10",
+  "rating": "5",
+  "tags": [
+    "Hühnchen","Fett","Salz","Pfeffer"
+  ]
+  },
+  "Schaschlik":{
+  "title": "Schaschlik",
+  "description": "Herzhaft würziges Schaschlik",
+  "image": "schaschlik.jpg",
+  "price": "10",
+  "rating": "4",
+  "tags": [
+    "Schweinefleisch", "Rindfleisch","Leber","Paprika","Zwiebel","Speck"
+  ]
+  }
+}
