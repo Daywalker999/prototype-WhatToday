@@ -26891,126 +26891,199 @@ module.exports = (function() {
      * @private
      */
     var _data = [{
-            title: "Hamburger1",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        }, {
-            title: "Hamburger2",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        },
-
-        {
-            title: "Hamburger3",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        },
-
-        {
-            title: "Hamburger4",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        },
-
-        {
-            title: "Hamburger5",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        },
-
-        {
-            title: "Hamburger6",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        },
-
-        {
-            title: "Hamburger7",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        }, {
-            title: "Hamburger8",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        }, {
-            title: "Hamburger9",
-            description: "aldskfj aödlskfj asödlkf jaödlksfj aödlfsjk ",
-            image: 'pizza.jpg',
-            price: 10.3,
-            rating: 43,
-            tags: [
-                'thunfisch',
-                'salami',
-                'käse'
-            ],
-
-        }
-
-    ];
+        "title": "Herzhafte Knödel",
+        "description": "Hausgemachte leckere Knödel",
+        "image": "knoedel.jpg",
+        "price": "3.50",
+        "rating":80,
+        "tags": [
+            "Kartoffeln",
+            "Mehl",
+            "Butter",
+            "Eigelb",
+            "Salz",
+            "Muskat"
+        ]
+    }, {
+        "title": "Herzhafte Spätzle",
+        "description": "Hausgemachte geschabte Spätzle",
+        "image": "spaetzle.jpg",
+        "price": "3.50",
+        "rating":100,
+        "tags": [
+            "Mehl",
+            "Butter",
+            "Eigelb",
+            "Salz",
+            "Milch"
+        ]
+    }, {
+        "title": "Schnitzel",
+        "description": "Original Wiener Schnitzel",
+        "image": "schnitzel.jpg",
+        "price": "7",
+        "rating": 80,
+        "tags": [
+            "Kalb", "Paniermehl", "Ei", "Semmelbrösel"
+        ]
+    }, {
+        "title": "Pommes",
+        "description": "Pommes Frites aus der Friteuse",
+        "image": "pommes.jpg",
+        "price": "3.50",
+        "rating": 80,
+        "tags": [
+            "Kartoffel", "Salz", "Fett", "Paprikapulver"
+        ]
+    }, {
+        "title": "Kroketten",
+        "description": "Leckere Backofen Kroketten",
+        "image": "kroketten.jpg",
+        "price": "3.50",
+        "rating": 70,
+        "tags": [
+            "Kartoffel", "Salz", "Ei", "Paniermehl"
+        ]
+    }, {
+        "title": "Schweinebraten",
+        "description": "Schweinebraten nach altem Bayerischen Rezept",
+        "image": "schweinebraten.jpg",
+        "price": "10",
+        "rating": 90,
+        "tags": [
+            "Schweinefleisch", "Öl", "Salz", "Pfeffer"
+        ]
+    }, {
+        "title": "Haxen",
+        "description": "Schweinehaxen nach altem Bayerischen Rezept",
+        "image": "haxen.jpg",
+        "price": "10",
+        "rating": 40,
+        "tags": [
+            "Schweinefleisch", "Öl", "Salz", "Pfeffer"
+        ]
+    }, {
+        "title": "Rinderbraten",
+        "description": "Herzhafter Rinderbraten",
+        "image": "rinderbraten.jpg",
+        "price": "10",
+        "rating": 35,
+        "tags": [
+            "Rindfleisch", "Öl", "Salz", "Pfeffer"
+        ]
+    }, {
+        "title": "Käsespätzle",
+        "description": "Die klassischen schwäbischen Käsespätzle",
+        "image": "kaesespaetzle.jpg",
+        "price": "7",
+        "rating": 80,
+        "tags": [
+            "Käse", "Mehl",
+            "Butter",
+            "Eigelb",
+            "Salz",
+            "Milch"
+        ]
+    }, {
+        "title": "Reis",
+        "description": "Langkornreis als Beilage",
+        "image": "reis.jpg",
+        "price": "3.50",
+        "rating": 67,
+        "tags": [
+            "Reis", "Salz"
+        ]
+    }, {
+        "title": "Sauerbraten",
+        "description": "Herzhafter Sauerbraten",
+        "image": "sauerbraten.jpg",
+        "price": "10",
+        "rating": 46,
+        "tags": [
+            "Rindfleisch", "Öl", "Salz", "Pfeffer", "Rotwein"
+        ]
+    }, {
+        "title": "Zwiebelrostbraten",
+        "description": "Langsam gebratener Bayerischer Zwieblrostbraten",
+        "image": "zwiebelrostbraten.jpg",
+        "price": "10",
+        "rating": 67,
+        "tags": [
+            "Schweinefleisch", "Öl", "Salz", "Pfeffer", "Zwiebel"
+        ]
+    }, {
+        "title": "Rouladen",
+        "description": "Herzhaft schmackhafte Rouladen",
+        "image": "rouladen.jpg",
+        "price": "10",
+        "rating": 100,
+        "tags": [
+            "Speck", "Rindfleisch", "Senf", "Öl", "Salz", "Pfeffer", "Essiggurke"
+        ]
+    }, {
+        "title": "Bratwurst",
+        "description": "Echte Thüringer Bratwürste",
+        "image": "bratwurst.jpg",
+        "price": "7",
+        "rating": 50,
+        "tags": [
+            "Schweinswurst"
+        ]
+    }, {
+        "title": "Kratoffelsalat",
+        "description": "Kartoffelsalat mit Essig",
+        "image": "kartoffelsalat.jpg",
+        "price": "3.50",
+        "rating": 10,
+        "tags": [
+            "Kartoffel", "Essig", "Essiggurke", "Zwiebel"
+        ]
+    }, {
+        "title": "Leberkäse",
+        "description": "Leckerer Leberkäse aus dem Ofen",
+        "image": "leberkaese.jpg",
+        "price": "7",
+        "rating": 100,
+        "tags": [
+            "Leberkäse", "Salz", "Pfeffer"
+        ]
+    }, {
+        "title": "Schweinelende",
+        "description": "Wundervoll herzhafte Schweinelende",
+        "image": "schweinelende.jpg",
+        "price": "10",
+        "rating": 47,
+        "tags": [
+            "Schweinefleisch", "Öl", "Salz", "Pfeffer"
+        ]
+    }, {
+        "title": "Burgunderbraten",
+        "description": "Leckerer Burgunderbraten nach altem Hausrezept",
+        "image": "burgunderbraten.png",
+        "price": "10",
+        "rating": 81,
+        "tags": [
+            "Rindfleisch", "Zwiebel", "Salz", "Pfeffer", "Öl", "Rotwein"
+        ]
+    }, {
+        "title": "Brathähnchen",
+        "description": "Knuspriges Brathähnchen",
+        "image": "haendle.jpg",
+        "price": "10",
+        "rating": 32,
+        "tags": [
+            "Hühnchen", "Fett", "Salz", "Pfeffer"
+        ]
+    }, {
+        "title": "Schaschlik",
+        "description": "Herzhaft würziges Schaschlik",
+        "image": "schaschlik.png",
+        "price": "10",
+        "rating": 59,
+        "tags": [
+            "Schweinefleisch", "Rindfleisch", "Leber", "Paprika", "Zwiebel", "Speck"
+        ]
+    }];
 
     var exports = {};
 
@@ -27090,7 +27163,7 @@ module.exports = (function() {
 );
 
 },{"../views/foodmatcher.mustache":7,"../views/overview.mustache":9,"./Foodmatcher.js":4,"./MenuData.js":5,"jquery":2}],7:[function(require,module,exports){
-var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");if(_.s(_.f("items",c,p,1),c,p,0,10,418,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("    <div class=\"matchPartner\" style=\"background-image: url('public/img/pizza.jpg')\" onClick=\"window.foodMatcher.selectWinner(");_.b(_.v(_.f("id",c,p,0)));_.b(");\">");_.b("\n" + i);_.b("        <div class=\"inner\">");_.b("\n" + i);_.b("            <h3>");_.b(_.v(_.f("title",c,p,0)));_.b("</h3>");_.b("\n" + i);_.b("            <div class=\"price\">");_.b(_.v(_.f("price",c,p,0)));_.b(" &euro;</div>");_.b("\n" + i);if(_.s(_.f("tags",c,p,1),c,p,0,281,382,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                <button type=\"button\" class=\"tag btn btn-default btn-sm\">");_.b(_.v(_.d(".",c,p,0)));_.b("</button>");_.b("\n");});c.pop();}_.b("        </div>");_.b("\n" + i);_.b("    </div>");_.b("\n");});c.pop();}return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
+var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");if(_.s(_.f("items",c,p,1),c,p,0,10,418,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("    <div class=\"matchPartner\" style=\"background-image: url('public/img/");_.b(_.v(_.f("image",c,p,0)));_.b("')\" onClick=\"window.foodMatcher.selectWinner(");_.b(_.v(_.f("id",c,p,0)));_.b(");\">");_.b("\n" + i);_.b("        <div class=\"inner\">");_.b("\n" + i);_.b("            <h3>");_.b(_.v(_.f("title",c,p,0)));_.b("</h3>");_.b("\n" + i);_.b("            <div class=\"price\">");_.b(_.v(_.f("price",c,p,0)));_.b(" &euro;</div>");_.b("\n" + i);if(_.s(_.f("tags",c,p,1),c,p,0,281,382,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                <button type=\"button\" class=\"tag btn btn-default btn-sm\">");_.b(_.v(_.d(".",c,p,0)));_.b("</button>");_.b("\n");});c.pop();}_.b("        </div>");_.b("\n" + i);_.b("    </div>");_.b("\n");});c.pop();}return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
 },{"hogan.js/lib/template":1}],8:[function(require,module,exports){
 var t = new (require('hogan.js/lib/template')).Template(function(c,p,i){var _=this;_.b(i=i||"");_.b("<h1>Ihre Produktempfehlung:</h1>");_.b("\n" + i);_.b("\n" + i);_.b("<ul class=\"list-group\">");_.b("\n" + i);if(_.s(_.f("items",c,p,1),c,p,0,72,1487,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("        <li class=\"list-group-item\">");_.b("\n" + i);_.b("            <div class=\"media\">");_.b("\n" + i);_.b("                <div class=\"media-left\">");_.b("\n" + i);_.b("                    <img class=\"media-object\" src=\"public/img/");_.b(_.v(_.f("image",c,p,0)));_.b("\" />");_.b("\n" + i);_.b("                </div>");_.b("\n" + i);_.b("                <div class=\"media-body\">");_.b("\n" + i);_.b("                    <h4 class=\"media-heading\">");_.b(_.v(_.f("title",c,p,0)));_.b("</h4>");_.b("\n" + i);_.b("                    <p>");_.b(_.v(_.f("description",c,p,0)));_.b("</p>");_.b("\n" + i);_.b("\n" + i);_.b("                    <button type=\"button\" class=\"price btn btn-default\" aria-label=\"Left Align\">");_.b("\n" + i);_.b("                        ");_.b(_.v(_.f("price",c,p,0)));_.b("\n" + i);_.b("                        <span class=\"glyphicon glyphicon-euro\" aria-hidden=\"true\"></span>");_.b("\n" + i);_.b("                    </button>");_.b("\n" + i);_.b("\n" + i);_.b("                    <div class=\"ratingBox\">");_.b("\n" + i);_.b("                        <div class=\"rating\" style=\"width: ");_.b(_.v(_.f("rating",c,p,0)));_.b("px;\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,835,943,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                                <span class=\"glyphicon glyphicon-star\"></span>");_.b("\n");});c.pop();}_.b("                        </div>");_.b("\n" + i);_.b("                        <div class=\"bg\">");_.b("\n" + i);if(_.s(_.f("five",c,p,1),c,p,0,1062,1176,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                                <span class=\"glyphicon glyphicon-star-empty\"></span>");_.b("\n");});c.pop();}_.b("                        </div>");_.b("\n" + i);_.b("                    </div>");_.b("\n" + i);_.b("                    <br/>");_.b("\n" + i);_.b("\n" + i);if(_.s(_.f("tags",c,p,1),c,p,0,1300,1417,"{{ }}")){_.rs(c,p,function(c,p,_){_.b("                        <button type=\"button\" class=\"tag btn btn-default btn-sm\">");_.b(_.v(_.d(".",c,p,0)));_.b("</button>");_.b("\n");});c.pop();}_.b("                </div>");_.b("\n" + i);_.b("            </div>");_.b("\n" + i);_.b("        </li>");_.b("\n");});c.pop();}_.b("</ul>");_.b("\n");return _.fl();;});module.exports = {  render: function () { return t.render.apply(t, arguments); },  r: function () { return t.r.apply(t, arguments); },  ri: function () { return t.ri.apply(t, arguments); }};
 },{"hogan.js/lib/template":1}],9:[function(require,module,exports){
