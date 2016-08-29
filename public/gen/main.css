@@ -148,6 +148,7 @@ body {
   height: 5em;
   background-size: cover;
   background-color: black;
+  border: 2px solid #ddd;
 }
 .list-group-item .price {
   font-weight: 400;
@@ -155,6 +156,8 @@ body {
 }
 .list-group-item .ratingBox {
   color: #ecbf5b;
+  float: right;
+  margin-top: 1.5em;
 }
 .list-group-item .ratingBox .rating {
   position: absolute;
@@ -168,6 +171,21 @@ body {
 }
 .list-group-item button {
   text-transform: capitalize;
+}
+.list-group-item button.price {
+  margin: 0.5em auto;
+}
+.list-group-item .media-body h4 {
+  font-size: 1.1em;
+}
+.list-group-item .media-body p {
+  font-size: 0.7em;
+}
+.list-group-item img.media-object {
+  width: 8em;
+  height: auto;
+  margin: auto;
+  display: block;
 }
 body[route=foodmatcher] nav {
   display: none;
