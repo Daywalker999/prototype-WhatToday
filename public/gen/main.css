@@ -134,7 +134,7 @@ table {
 body {
   font-family: Helvetica;
   background-color: #e4e4e2;
-  color: #black;
+  color: black;
   font-size: 15px;
   line-height: 1.5;
   letter-spacing: 0.072em;
@@ -203,4 +203,33 @@ body[route=foodmatcher] .matchPartner .inner h3 {
 body[route=foodmatcher] .matchPartner .inner button {
   padding: 2px 5px;
   text-transform: capitalize;
+}
+body[route=overview] img.media-object {
+  width: 8em;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+body[route=overview] .media-body h4 {
+  font-size: 1.1em;
+}
+body[route=overview] .media-body p {
+  font-size: 0.7em;
+}
+body[route=overview] button.tag {
+  font-size: 0.8em;
+  display: none;
+}
+body[route=overview] button.price {
+  margin: 0.5em auto;
+}
+body[route=overview] .list-group-item {
+  border: 2px solid #ddd;
+}
+body[route=overview] .navbar {
+  margin-bottom: 0;
+}
+body[route=overview] .ratingBox {
+  float: right;
+  margin-top: 1.5em;
 }
